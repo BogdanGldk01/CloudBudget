@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    width: auto;
+    height: auto;
+    font-family: Lato;
+}
+.header {
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-transform: uppercase;
+    align-items: center;
+    margin-top: 60px;
+}
+.logo {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+}
+.cloud-logo {
+    padding-right: 10px;
+}
+nav {
+    border: 1px solid green;
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+    padding-right: 20px;
+}
+.lang {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.lang-logo{
+    padding-right: 12px;
+}
+.lang span{
+    padding-right: 12px;
+}
+
+@media screen and (max-width: 750px){
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a{
+      display: block;
+    }
+  }
