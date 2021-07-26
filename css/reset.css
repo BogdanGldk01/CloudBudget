@@ -1,16 +1,11 @@
-body, 
-header,
-div,
-nav {
+body, header, div, nav, p{
     box-sizing: border-box;
 }
-body, 
-header,
-div,
-img,
-h1,
-h3,
-nav {
+body, header, div, img, h1, h3, nav, p{
     margin: 0;
     padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #FFFF;
 }
