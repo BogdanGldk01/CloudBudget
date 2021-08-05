@@ -383,6 +383,10 @@ body {
 
 /* ------------------------ */
 
+.technology{
+  padding: 0 10px;
+}
+
 .content-bg2{
   background: #FFFFFF;
   min-height: 500px;
@@ -442,7 +446,7 @@ body {
   color: #000000;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 750px){
 
   .content-bg2{
     padding-bottom: 100px;
@@ -571,6 +575,18 @@ body {
 
 }
 
+@media screen and (max-width: 750px){
+
+.company-pics{
+  display: none;
+}
+
+.signing-pics{
+  display: none;
+}
+
+}
+
 /*------------------------------------*/
 
 .content-bg4{
@@ -584,7 +600,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 200px 10px;
+  padding: 200px 30px;
 }
 
 .contact-header{
@@ -645,7 +661,6 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: rgba(19, 39, 67, 0.5);
-  margin-right: 30px;
   margin-bottom: 25px;
   width: 100%;
   height: 60px;
@@ -660,7 +675,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: rgba(19, 39, 67, 0.5);
-  margin-right: 30px;
+  /* margin-right: 30px; */
   margin-bottom: 25px;
   width: 100%;
   height: 60px;
@@ -700,6 +715,29 @@ body {
 
   .submit-input{
     text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 825px){
+
+  .contact-blocks{
+    padding: 100px 20px;
+  }
+
+  .name{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #first-name{
+    max-width: 20em;
+    width: 100%;
+  }
+
+  #last-name{
+    max-width: 20em;
+    width: 100%;
   }
 
 }
@@ -794,4 +832,90 @@ body {
   font-size: 12px;
   line-height: 14px;
   color: #101010;
+}
+
+.arrow-list{
+  display: none;
+}
+
+@media screen and (max-width: 750px){
+
+  .footer-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .address{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .address-header{
+    padding-top: 32px;
+  }
+
+  .services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .services-header{
+    padding-top: 32px;
+  }
+
+  .get-in-touch{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .get-header{
+    padding-top: 32px;
+  }
+
+  .we-sup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .we-sup-header{
+    padding-top: 32px;
+  }
+
+  .arrow-list{
+    display: block;
+    max-width: 60px;
+    max-height: 60px;
+    padding-top: 16px;
+    padding-right: 40px;
+  }
+
+  .floor{
+    display: none;
+  }
+
+  .ref{
+    display: none;
+  }
+
+  .get-in-touch a{
+    display: none;
+  }
+
+  .ph-number {
+    display: none;
+  }
+
+  .get-icon{
+    display: none;
+  }
+
+  .visa{
+    display: none;
+  }
+
 }
