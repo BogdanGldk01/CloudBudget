@@ -12,7 +12,7 @@
 <body>
     <header class="header">
         <div class = "content">
-            <div class = header-items>
+            <div class = "header-items">
                 <div class = "logo">
                     <img class = "cloud-logo" src = "pics/cloud.svg" alt = "Cloud"/>
                 </div>
@@ -43,9 +43,7 @@
                 </p>
             </div>
         </div>
-        <div class = img-bg>
-            <img class = "wrapper-pics" src="pics/bg.png">
-        </div>
+        <img class = "wrapper-pics" src="pics/bg.png">
         <div class = "red-bg"></div>
     </section>
     <section class = "present">
@@ -57,9 +55,9 @@
                         Management Software
                     </h2>
                     <p class = "description">
-                        Our software is made so you can access and manage your budget<br />
-                        and expenses online at any time from any device. It provides detailed income<br />
-                        and expense reports with graphs so you can easilly see your spending<br />
+                        Our software is made so you can access and manage your budget
+                        and expenses online at any time from any device. It provides detailed income
+                        and expense reports with graphs so you can easilly see your spending
                         patterns and budget at a glance. Read below to find out more.
                     </p>
                     <a class = "extra" href = "">Learn More</a>
@@ -172,9 +170,9 @@
             <div class = "content">
                 <div class = "economy-blocks">
                     <div class = "economy-desc">
-                        <h2 class = "stay">Stay focused on saving<br />money</h2>
-                        <p class = "important">It is important to stay focused on saving money in any way you can. We<br />
-                            help you monitor your spending habits so you can easily spot and cut<br />
+                        <h2 class = "stay">Stay focused on saving money</h2>
+                        <p class = "important">It is important to stay focused on saving money in any way you can. We
+                            help you monitor your spending habits so you can easily spot and cut
                             any unnecessary expenses. Simply join today to get started!</p>
                         <div class = "join-icon">
                             <img class = "economy-playstore" src = "pics/playstore.svg">
@@ -217,47 +215,64 @@
         </div>
     </section>
     <footer class = "footer">
-        <div class = "content-bg5">
+        <div class="content-bg5">
             <div class = "content">
-                <div class = footer-items>
-                    <div class = "address">
-                        <h3 class = "address-header">Address</h3>
-                        <p class = "floor">Pipang Ltd, Griva Digeni,<br />
+                <div class="spoilers">
+                    <div class="spoiler">
+                        <input type="checkbox" id = "trigger1"/>
+                        <label for = "trigger1" id = "label">
+                            <span>Address</span>
+                            <img class = "arrow-down" src = "pics/arrow-down.png">
+                        </label>
+                        <p class="cont">Pipang Ltd, Griva Digeni,<br />
                             81-83 Jacovides Tower, 1st Floor<br />
                             1090 Picosia USA</p>
-                        <img class = "arrow-list" src = "pics/arrow-list.png">      
                     </div>
-                    <div class = "services">
-                        <h3 class = "services-header">Services</h3>
-                        <nav class = "ref">
+                    <div class="spoiler">
+                        <input type="checkbox" id = "trigger2"/>
+                        <label for = "trigger2" id = "label">
+                            <span>Services</span>
+                            <img class = "arrow-down" src = "pics/arrow-down.png">
+                        </label>
+                        <nav class = "cont" id = "nav">
                             <a href = "">Overview</a>
                             <a href = "">Features</a>
                             <a href = "">Technology</a>
                             <a href = "">Terms & Conditions</a>
                             <a href = "">Privecy</a>
                         </nav>
-                        <img class = "arrow-list" src = "pics/arrow-list.png">  
                     </div>
-                    <div class = "get-in-touch">
-                        <h3 class = "get-header">Get in Touch</h3>
-                        <a href = "">info@cloudbudget.com</a>
-                        <p class = "ph-number">+1 844-721-7120</p>
-                        <div class = "get-icon">
-                            <img class = "facebook" src = "pics/facebook.svg">
-                            <img class = "linkedin" src = "pics/linkedin.svg">
-                            <img class = "twitter" src = "pics/twitter.svg">
+                    <div class="spoiler">
+                        <input type="checkbox" id = "trigger3"/>
+                        <label for = "trigger3" id = "label">
+                            <span>Get in Touch</span>
+                            <img class = "arrow-down" src = "pics/arrow-down.png">
+                        </label>
+                        <div class="cont">
+                            <a href = "">info@cloudbudget.com</a>
+                            <p class = "ph-number">+1 844-721-7120</p>
+                            <div class = "get-icon">
+                                <img class = "facebook" src = "pics/facebook.svg">
+                                <img class = "linkedin" src = "pics/linkedin.svg">
+                                <img class = "twitter" src = "pics/twitter.svg">
+                            </div>
                         </div>
-                        <img class = "arrow-list" src = "pics/arrow-list.png">  
                     </div>
-                    <div class = "we-sup">
-                        <h3 class = "we-sup-header">We Support</h3>
-                        <img class = "visa" src = "pics/visa.png">
-                        <img class = "arrow-list" src = "pics/arrow-list.png">  
+                    <div class="spoiler">
+                        <input type="checkbox" id = "trigger4"/>
+                        <label for = "trigger4" id = "label">
+                            <span>We Support</span>
+                            <img class = "arrow-down" src = "pics/arrow-down.png">
+                        </label>
+                        <div class="cont">
+                            <img class = "visa" src = "pics/visa.png"> 
+                        </div>
                     </div>
-                </div>  
+                </div>
                 <p class = "copyright">Copyright 2021 CloudBudget</p>
             </div>
         </div>
     </footer>
+    
 </body>
 </html>
