@@ -9,14 +9,35 @@ body {
   background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
   position: fixed;
   top: 0;
-  padding: 30px;
+  padding: 30px 0;
   z-index: 3;
 }
 
 .content {
   max-width: 1200px;
+  padding: 0 30px;
   height: 100%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px){
+
+  .content {
+
+    padding: 0 20px;
+
+  }
+
+}
+
+@media screen and (max-width: 700px){
+
+  .content {
+
+    padding: 0 10px;
+
+  }
+
 }
 
 .header-items {
@@ -60,7 +81,7 @@ body {
 @media screen and (max-width: 700px){
 
   .header{
-    padding: 10px;
+    padding: 10px 0;
   }
 
   .header-items {
@@ -174,7 +195,7 @@ body {
 }
 
 .cont-desc{
-  margin: 0 50px; 
+  margin-right: 125px;
   color: #000000;
   width: 50%;
 } 
@@ -262,7 +283,7 @@ body {
 
 /* ------------------------ */
 
-.content-bg{
+.features{
   background: #FAFAFA;
   padding-bottom: 200px;
   height: auto;
@@ -286,11 +307,11 @@ body {
 .img-block{
   justify-content: center;
   width: 33%;
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
-.img-block:first-child{
-  margin-left: 10px;
+.img-block:last-child{
+  margin: 0;
 }
 
 .together{
@@ -343,7 +364,7 @@ body {
 
 @media screen and (max-width: 1000px){
 
-  .content-bg{
+  .features{
     padding-bottom: 100px;
   }
 
@@ -358,6 +379,7 @@ body {
     width: 100%;
     padding: 0;
     padding-bottom: 50px;
+    margin: 0;
   }
 
   .img-block:first-child{
@@ -397,13 +419,16 @@ body {
 
 }
 
+@media screen and (max-width: 1000px){
+
+  .together{
+    padding: 0;
+  }
+
+}
 /* ------------------------ */
 
 .technology{
-  padding: 0 10px;
-}
-
-.content-bg2{
   background: #FFFFFF;
   min-height: 500px;
   height: 100%;
@@ -411,7 +436,7 @@ body {
 }
 
 .tech{
-  padding: 65px 0;
+  padding: 85px 0;
   text-align: center;
   font-weight: 600;
   font-size: 36px;
@@ -424,12 +449,12 @@ body {
   justify-content: space-between;
 }
 
-.tech-img-block{
-  margin-right: 10px;
+.tech-img-block:first-child{
+  margin-left: 30px;
 }
 
-.tech-img-block{
-  margin-left: 10px;
+.tech-img-block:last-child{
+  margin-right: 30px;
 }
 
 .in-block{
@@ -475,7 +500,19 @@ body {
 
 @media screen and (max-width: 700px){
 
-  .content-bg2{
+  .tech-img-block{
+    margin: 0;
+  }
+
+  .tech-img-block:first-child{
+    margin: 0;
+  }
+
+  .tech-img-block:last-child{
+    margin: 0;
+  }
+
+  .technology{
     padding-bottom: 100px;
   }
 
@@ -489,7 +526,7 @@ body {
 
 /* ------------------------ */
 
-.content-bg3{
+.economy{
   background: #ED4C5C;
   min-height: 500px;
   height: 100%;
@@ -502,12 +539,12 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 100px 50px;
+  padding: 100px 50px 100px 0;
 }
 
 .economy-desc{
   width: 100%;
-  margin-right: 50px;
+  margin-right: 80px;
 }
 
 .stay{
@@ -576,14 +613,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 100px 0;
   }
 
   .economy-desc{
-    padding: 0 50px 70px;
-    margin: 0;
-    width: 85%;
-    align-self: start;
-
+    padding-bottom: 70px;
+    margin: 0 auto;
+    align-items: center;
+    width: 70%;
   }
 
   .economy-pictures{
@@ -602,7 +639,7 @@ body {
 
 /*------------------------------------*/
 
-.content-bg4{
+.contact{
   background: #FFFFFF;
   min-height: 500px;
   height: 100%;
@@ -613,7 +650,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 200px 30px;
+  padding: 200px 0 200px 10px;
 }
 
 .contact-text{
@@ -641,8 +678,8 @@ body {
 }
 
 .name{
-  position: relative;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 25px;
 }
 
@@ -655,8 +692,8 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: rgba(19, 39, 67, 0.5);
-  width: 48%;
   height: 60px;
+  width: 48%;
 }
 
 #last-name{
@@ -668,10 +705,8 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: rgba(19, 39, 67, 0.5);
-  width: 48%;
   height: 60px;
-  position: absolute;
-  right: 0;
+  width: 48%;
 }
 
 #phone-number{
@@ -723,6 +758,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 200px 0;
   }
 
   .contact-text{
@@ -740,43 +776,23 @@ body {
 
 }
 
-@media screen and (max-width: 825px){
+@media screen and (max-width: 700px){
 
   .contact-blocks{
-    padding: 100px 20px;
+    padding: 100px 0;
   }
 
   .name{
-    display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
 
   #first-name{
-    max-width: 20em;
     width: 100%;
+    margin-bottom: 25px;
   }
 
   #last-name{
-    max-width: 20em;
-    width: 100%;
-  }
-
-}
-
-@media screen and (max-width: 500px){
-
-  .name{
-    display: block;
-  }
-
-  #first-name{
-    max-width: 100%;
-    width: 100%;
-    margin-right: 0;
-  }
-
-  #last-name{
-    max-width: 100%;
     width: 100%;
   }
 
@@ -786,11 +802,8 @@ body {
 
 .footer{
   color: #101010;
-}
-
-.content-bg5{
   background: #FAFAFA;
-  padding: 85px 85px;
+  padding: 85px 0;
 }
 
 .spoilers{
@@ -800,6 +813,7 @@ body {
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
+  width: 100%;
 }
 
 .spoiler > input{
@@ -842,7 +856,7 @@ span{
   padding-top: 85px;
 }
 
-@media screen and (max-width: 870px){
+@media screen and (max-width: 1000px){
  
   .spoilers{
       display: block;
@@ -878,13 +892,4 @@ span{
   a{
       color: chocolate;
   }
-}
-
-@media screen and (max-width: 450px){
- 
-  .content-bg5{
-    background: #FAFAFA;
-    padding: 85px 45px;
-  }
-  
 }
